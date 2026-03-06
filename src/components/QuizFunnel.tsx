@@ -34,8 +34,7 @@ const STEPS = [
   },
 ];
 
-// TODO: Replace PLACEHOLDER with actual GHL calendar widget ID
-const BOOKING_URL = 'https://api.leadconnectorhq.com/widget/booking/PLACEHOLDER';
+const BOOKING_URL = 'https://api.leadconnectorhq.com/widget/booking/w6e74SwVPkueZ7bbLXKs';
 
 type Answers = {
   businessType: string;
