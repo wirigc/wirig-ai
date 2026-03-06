@@ -257,7 +257,7 @@ export default function QuizFunnel() {
               disabled={submitting}
               className="w-full h-13 rounded-full bg-teal text-white font-semibold text-lg hover:bg-teal-light transition-all hover:shadow-[0_0_30px_rgba(0,180,216,0.3)] font-sans disabled:opacity-60 disabled:cursor-not-allowed mt-4"
             >
-              {submitting ? 'Submitting...' : 'Get My Free AI Audit \u2192'}
+              {submitting ? 'Submitting...' : 'Get My Free AI Audit Call \u2192'}
             </button>
           </form>
         </div>
