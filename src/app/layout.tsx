@@ -15,9 +15,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "wirig.ai — AI Systems That Work While You Sleep",
+  title: "wirig.ai — Your Business Is Losing Money Every Hour It Runs Without AI",
   description:
-    "AI-powered automation for business operations. Chatbots, voice receptionists, workflow automation, lead generation, and CRM integration.",
+    "We build custom AI systems that answer your phones, qualify your leads, and automate your operations. Get your free AI audit today.",
 };
 
 export default function RootLayout({
