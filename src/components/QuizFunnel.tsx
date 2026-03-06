@@ -34,7 +34,7 @@ const STEPS = [
   },
 ];
 
-const BOOKING_URL = 'https://api.leadconnectorhq.com/widget/booking/w6e74SwVPkueZ7bbLXKs';
+const CALENDAR_ID = 'w6e74SwVPkueZ7bbLXKs';
 
 type Answers = {
   businessType: string;
@@ -97,40 +97,67 @@ export default function QuizFunnel() {
     }
   };
 
-  const totalSteps = 5;
-  const progress = submitted ? 100 : ((step + 1) / totalSteps) * 100;
-
   const getResultText = () => {
     if (answers.bottleneck === 'Missing phone calls & leads') {
       return 'Based on your answers, an AI Voice Receptionist could save you an estimated $2,000 to $5,000/month in missed opportunities.';
     }
-    return "We've got your info! Let's set up a quick 15-minute call to walk through your custom AI audit.";
+    if (answers.bottleneck === 'Manual follow-ups eating my time') {
+      return 'Based on your answers, workflow automation could save your team 15 to 25 hours per week on repetitive follow-up tasks.';
+    }
+    if (answers.bottleneck === 'No system for qualifying leads') {
+      return 'Based on your answers, an AI-powered lead qualification system could help you close 2 to 3x more deals by filtering out unqualified leads automatically.';
+    }
+    return 'Based on your answers, AI automation could save you thousands per month in operational costs. Pick a time below and we\'ll walk through your custom plan.';
   };
+
+  // Build the GHL calendar embed URL with pre-filled contact info
+  const getCalendarUrl = () => {
+    const params = new URLSearchParams();
+    if (answers.name) {
+      const parts = answers.name.trim().split(' ');
+      params.set('first_name', parts[0] || '');
+      if (parts.length > 1) params.set('last_name', parts.slice(1).join(' '));
+    }
+    if (answers.email) params.set('email', answers.email);
+    if (answers.phone) params.set('phone', answers.phone);
+    return `https://api.leadconnectorhq.com/widget/booking/${CALENDAR_ID}?${params.toString()}`;
+  };
+
+  const totalSteps = 5;
+  const progress = submitted ? 100 : ((step + 1) / totalSteps) * 100;
 
   if (submitted) {
     return (
-      <div className="max-w-2xl mx-auto text-center">
+      <div className="max-w-3xl mx-auto">
         <div className="animate-fade-in-up">
-          <div className="text-6xl mb-6">&#127881;</div>
-          <h3 className="font-heading text-2xl md:text-3xl font-bold mb-4 text-navy">
-            Your AI audit request is in!
-          </h3>
-          <p className="text-gray-700 text-lg mb-8 font-sans leading-relaxed">
-            {getResultText()}
-          </p>
-          <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center h-14 px-10 rounded-full bg-teal text-white font-semibold text-lg hover:bg-teal-light transition-all hover:shadow-[0_0_30px_rgba(0,180,216,0.3)] font-sans"
-          >
-            Book Your Free AI Audit Call
-            <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </a>
-          <p className="text-gray-500 text-sm mt-4 font-sans">
-            Pick a time that works for you. We&apos;ll walk through your personalized AI plan on the call.
+          {/* Results header */}
+          <div className="text-center mb-8">
+            <div className="text-5xl mb-4">📊</div>
+            <h3 className="font-heading text-2xl md:text-3xl font-bold mb-4 text-navy">
+              Here&apos;s what we found
+            </h3>
+            <p className="text-gray-700 text-lg font-sans leading-relaxed max-w-2xl mx-auto">
+              {getResultText()}
+            </p>
+          </div>
+
+          {/* Embedded calendar */}
+          <div className="bg-white rounded-2xl border-2 border-gray-200 overflow-hidden shadow-sm">
+            <div className="bg-navy text-white px-6 py-4 text-center">
+              <h4 className="font-heading text-lg font-semibold">Book Your Free 15-Minute AI Audit Call</h4>
+              <p className="text-gray-300 text-sm font-sans mt-1">Pick a time that works for you. No strings attached.</p>
+            </div>
+            <iframe
+              src={getCalendarUrl()}
+              className="w-full border-0"
+              style={{ height: '700px', minHeight: '600px' }}
+              title="Book your AI Audit Call"
+              loading="eager"
+            />
+          </div>
+
+          <p className="text-gray-500 text-sm mt-4 text-center font-sans">
+            Your contact info has been pre-filled from the quiz. Just pick a time slot.
           </p>
         </div>
       </div>
@@ -204,10 +231,10 @@ export default function QuizFunnel() {
           className="quiz-step quiz-enter-forward"
         >
           <h3 className="font-heading text-xl md:text-2xl font-semibold mb-2 text-center text-navy">
-            Almost done! Where should we send your AI audit?
+            Almost done! Where should we send your results?
           </h3>
           <p className="text-gray-700 text-center mb-8 font-sans">
-            We&apos;ll review your answers and send a personalized automation plan within 24 hours.
+            Enter your info below to see how much revenue your business could be losing without AI.
           </p>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
@@ -257,7 +284,7 @@ export default function QuizFunnel() {
               disabled={submitting}
               className="w-full h-13 rounded-full bg-teal text-white font-semibold text-lg hover:bg-teal-light transition-all hover:shadow-[0_0_30px_rgba(0,180,216,0.3)] font-sans disabled:opacity-60 disabled:cursor-not-allowed mt-4"
             >
-              {submitting ? 'Submitting...' : 'Get My Free AI Audit Call \u2192'}
+              {submitting ? 'Submitting...' : 'See How Much Revenue I\u2019m Losing \u2192'}
             </button>
           </form>
         </div>
