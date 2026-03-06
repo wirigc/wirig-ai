@@ -116,7 +116,7 @@ export default function QuizFunnel() {
           <h3 className="font-heading text-2xl md:text-3xl font-bold mb-4 text-navy">
             Your AI audit request is in!
           </h3>
-          <p className="text-gray-500 text-lg mb-8 font-sans leading-relaxed">
+          <p className="text-gray-700 text-lg mb-8 font-sans leading-relaxed">
             {getResultText()}
           </p>
           <a
@@ -207,7 +207,7 @@ export default function QuizFunnel() {
           <h3 className="font-heading text-xl md:text-2xl font-semibold mb-2 text-center text-navy">
             Almost done! Where should we send your AI audit?
           </h3>
-          <p className="text-gray-500 text-center mb-8 font-sans">
+          <p className="text-gray-700 text-center mb-8 font-sans">
             We&apos;ll review your answers and send a personalized automation plan within 24 hours.
           </p>
           <form onSubmit={handleSubmit} className="space-y-4">
