@@ -26,13 +26,16 @@ const STEPS = [
   },
   {
     question: 'How many leads or calls does your business get per month?',
-    options: ['Less than 50', '50\u2013200', '200\u2013500', '500+'],
+    options: ['Less than 50', '50 to 200', '200 to 500', '500+'],
   },
   {
     question: "What's your approximate monthly revenue?",
-    options: ['Under $10K', '$10K\u2013$50K', '$50K\u2013$200K', '$200K+'],
+    options: ['Under $10K', '$10K to $50K', '$50K to $200K', '$200K+'],
   },
 ];
+
+// TODO: Replace PLACEHOLDER with actual GHL calendar widget ID
+const BOOKING_URL = 'https://api.leadconnectorhq.com/widget/booking/PLACEHOLDER';
 
 type Answers = {
   businessType: string;
@@ -100,9 +103,9 @@ export default function QuizFunnel() {
 
   const getResultText = () => {
     if (answers.bottleneck === 'Missing phone calls & leads') {
-      return 'Based on your answers, an AI Voice Receptionist could save you an estimated $2,000\u2013$5,000/month in missed opportunities.';
+      return 'Based on your answers, an AI Voice Receptionist could save you an estimated $2,000 to $5,000/month in missed opportunities.';
     }
-    return "We'll analyze your business and send you a custom automation plan within 24 hours.";
+    return "We've got your info! Let's set up a quick 15-minute call to walk through your custom AI audit.";
   };
 
   if (submitted) {
@@ -110,24 +113,26 @@ export default function QuizFunnel() {
       <div className="max-w-2xl mx-auto text-center">
         <div className="animate-fade-in-up">
           <div className="text-6xl mb-6">&#127881;</div>
-          <h3 className="font-heading text-2xl md:text-3xl font-bold mb-4">
+          <h3 className="font-heading text-2xl md:text-3xl font-bold mb-4 text-navy">
             Your AI audit request is in!
           </h3>
           <p className="text-gray-500 text-lg mb-8 font-sans leading-relaxed">
             {getResultText()}
           </p>
-          <p className="text-gray-700 font-sans mb-4">
-            Want faster results? Book a free 15-minute consultation now:
-          </p>
           <a
-            href="#book"
-            className="inline-flex items-center justify-center h-13 px-8 rounded-full bg-teal text-navy font-semibold text-lg hover:bg-teal-light transition-all hover:shadow-[0_0_30px_rgba(0,180,216,0.3)] font-sans"
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center h-14 px-10 rounded-full bg-teal text-white font-semibold text-lg hover:bg-teal-light transition-all hover:shadow-[0_0_30px_rgba(0,180,216,0.3)] font-sans"
           >
-            Book a Consultation
+            Book Your Free AI Audit Call
             <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </a>
+          <p className="text-gray-500 text-sm mt-4 font-sans">
+            Pick a time that works for you. We&apos;ll walk through your personalized AI plan on the call.
+          </p>
         </div>
       </div>
     );
@@ -168,7 +173,7 @@ export default function QuizFunnel() {
           key={step}
           className={`quiz-step ${direction === 'forward' ? 'quiz-enter-forward' : 'quiz-enter-back'}`}
         >
-          <h3 className="font-heading text-xl md:text-2xl font-semibold mb-8 text-center text-gray-700">
+          <h3 className="font-heading text-xl md:text-2xl font-semibold mb-8 text-center text-navy">
             {STEPS[step].question}
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3" role="radiogroup" aria-label={STEPS[step].question}>
@@ -199,7 +204,7 @@ export default function QuizFunnel() {
           key="contact"
           className="quiz-step quiz-enter-forward"
         >
-          <h3 className="font-heading text-xl md:text-2xl font-semibold mb-2 text-center text-gray-700">
+          <h3 className="font-heading text-xl md:text-2xl font-semibold mb-2 text-center text-navy">
             Almost done! Where should we send your AI audit?
           </h3>
           <p className="text-gray-500 text-center mb-8 font-sans">
@@ -251,7 +256,7 @@ export default function QuizFunnel() {
             <button
               type="submit"
               disabled={submitting}
-              className="w-full h-13 rounded-full bg-teal text-navy font-semibold text-lg hover:bg-teal-light transition-all hover:shadow-[0_0_30px_rgba(0,180,216,0.3)] font-sans disabled:opacity-60 disabled:cursor-not-allowed mt-4"
+              className="w-full h-13 rounded-full bg-teal text-white font-semibold text-lg hover:bg-teal-light transition-all hover:shadow-[0_0_30px_rgba(0,180,216,0.3)] font-sans disabled:opacity-60 disabled:cursor-not-allowed mt-4"
             >
               {submitting ? 'Submitting...' : 'Get My Free AI Audit \u2192'}
             </button>

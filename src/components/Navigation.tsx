@@ -30,14 +30,14 @@ export default function Navigation() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-navy/95 backdrop-blur-md border-b border-white/5 shadow-lg' : 'bg-transparent'
+        scrolled ? 'bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 relative z-50" aria-label="wirig.ai home">
           <svg width="180" height="40" viewBox="0 0 300 64" fill="none" aria-hidden="true">
             <g>
-              <path d="M4 16L16 48L28 24L40 48L52 16" stroke="#FFFFFF" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M4 16L16 48L28 24L40 48L52 16" stroke="#0A1628" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
               <circle cx="4" cy="16" r="3.5" fill="#00B4D8"/>
               <circle cx="28" cy="24" r="3.5" fill="#00B4D8"/>
               <circle cx="52" cy="16" r="3.5" fill="#00B4D8"/>
@@ -46,7 +46,7 @@ export default function Navigation() {
               <line x1="28" y1="24" x2="52" y2="16" stroke="#00B4D8" strokeWidth="1" opacity="0.2"/>
             </g>
             <text x="72" y="44" fontFamily="Sora, sans-serif" fontSize="36" letterSpacing="-0.5">
-              <tspan fontWeight="700" fill="#FFFFFF">wirig</tspan>
+              <tspan fontWeight="700" fill="#0A1628">wirig</tspan>
               <tspan fontWeight="700" fill="#00B4D8">.</tspan>
               <tspan fontWeight="300" fill="#00B4D8">ai</tspan>
             </text>
@@ -59,14 +59,14 @@ export default function Navigation() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-gray-300 hover:text-white transition-colors font-sans"
+              className="text-sm text-gray-500 hover:text-navy transition-colors font-sans"
             >
               {link.label}
             </a>
           ))}
           <a
             href="#audit"
-            className="inline-flex items-center justify-center h-9 px-5 rounded-full bg-teal text-navy text-sm font-semibold hover:bg-teal-light transition-colors"
+            className="inline-flex items-center justify-center h-9 px-5 rounded-full bg-teal text-white text-sm font-semibold hover:bg-teal-light transition-colors"
           >
             Get Your Free AI Audit
           </a>
@@ -81,18 +81,18 @@ export default function Navigation() {
         >
           <div className="w-6 flex flex-col gap-1.5">
             <span
-              className={`block h-0.5 bg-white rounded transition-all duration-300 ${
-                mobileOpen ? 'rotate-45 translate-y-2' : ''
+              className={`block h-0.5 rounded transition-all duration-300 ${
+                mobileOpen ? 'rotate-45 translate-y-2 bg-white' : 'bg-navy'
               }`}
             />
             <span
-              className={`block h-0.5 bg-white rounded transition-all duration-300 ${
-                mobileOpen ? 'opacity-0' : ''
+              className={`block h-0.5 rounded transition-all duration-300 ${
+                mobileOpen ? 'opacity-0 bg-white' : 'bg-navy'
               }`}
             />
             <span
-              className={`block h-0.5 bg-white rounded transition-all duration-300 ${
-                mobileOpen ? '-rotate-45 -translate-y-2' : ''
+              className={`block h-0.5 rounded transition-all duration-300 ${
+                mobileOpen ? '-rotate-45 -translate-y-2 bg-white' : 'bg-navy'
               }`}
             />
           </div>
@@ -117,7 +117,7 @@ export default function Navigation() {
           <a
             href="#audit"
             onClick={() => setMobileOpen(false)}
-            className="inline-flex items-center justify-center h-12 px-8 rounded-full bg-teal text-navy text-lg font-semibold hover:bg-teal-light transition-colors mt-4"
+            className="inline-flex items-center justify-center h-12 px-8 rounded-full bg-teal text-white text-lg font-semibold hover:bg-teal-light transition-colors mt-4"
           >
             Get Your Free AI Audit
           </a>

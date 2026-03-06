@@ -15,7 +15,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "wirig.ai — Your Business Is Losing Money Every Hour It Runs Without AI",
+  title: "wirig.ai | Your Business Is Losing Money Every Hour It Runs Without AI",
   description:
     "We build custom AI systems that answer your phones, qualify your leads, and automate your operations. Get your free AI audit today.",
 };

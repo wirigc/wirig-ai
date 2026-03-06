@@ -18,8 +18,8 @@
 
 body {
   font-family: var(--font-dm-sans), system-ui, sans-serif;
-  background: #0A1628;
-  color: #FFFFFF;
+  background: #FFFFFF;
+  color: #0A1628;
 }
 
 @keyframes fade-in-up {
