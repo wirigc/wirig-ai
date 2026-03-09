@@ -333,7 +333,7 @@ export default function Home() {
               See How Much Your Business Could Save with AI
             </h2>
             <p className="text-lg text-gray-500 max-w-2xl mx-auto font-sans">
-              Answer 4 quick questions and we&apos;ll show you exactly where AI can save you time
+              Answer a few quick questions and we&apos;ll show you exactly where AI can save you time
               and money.
             </p>
           </div>
