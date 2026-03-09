@@ -286,6 +286,10 @@ export default function QuizFunnel() {
             >
               {submitting ? 'Submitting...' : 'See How Much Revenue I\u2019m Losing \u2192'}
             </button>
+            <p className="text-gray-400 text-xs text-center mt-3 font-sans">
+              We respect your privacy. No spam, ever.{' '}
+              <a href="/privacy" className="text-teal/70 hover:text-teal transition-colors underline">Privacy Policy</a>
+            </p>
           </form>
         </div>
       )}

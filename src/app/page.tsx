@@ -144,9 +144,9 @@ export default function Home() {
                 Never miss another call. Our AI answers your phone 24/7, qualifies callers, books
                 appointments, and routes urgent calls to you. It sounds completely natural and human.
               </p>
-              <span className="text-teal text-sm font-sans font-medium group-hover:underline">
+              <a href="/services/ai-voice-receptionists" className="text-teal text-sm font-sans font-medium group-hover:underline">
                 Learn more &rarr;
-              </span>
+              </a>
             </div>
 
             {/* AI Chatbots */}
@@ -161,9 +161,9 @@ export default function Home() {
                 Turn your website into a 24/7 sales machine. Our chatbots engage visitors, answer
                 questions, qualify leads, and book meetings while you sleep.
               </p>
-              <span className="text-teal text-sm font-sans font-medium group-hover:underline">
+              <a href="/services/ai-chatbots" className="text-teal text-sm font-sans font-medium group-hover:underline">
                 Learn more &rarr;
-              </span>
+              </a>
             </div>
 
             {/* Workflow Automation */}
@@ -178,9 +178,9 @@ export default function Home() {
                 Eliminate the repetitive tasks draining your team. We connect your tools, automate
                 your processes, and free up hours every week.
               </p>
-              <span className="text-teal text-sm font-sans font-medium group-hover:underline">
+              <a href="/services/workflow-automation" className="text-teal text-sm font-sans font-medium group-hover:underline">
                 Learn more &rarr;
-              </span>
+              </a>
             </div>
 
             {/* Lead Generation Funnels */}
@@ -195,9 +195,9 @@ export default function Home() {
                 Smart funnels that don&apos;t just capture leads, they qualify them. Know
                 exactly who&apos;s ready to buy before you ever pick up the phone.
               </p>
-              <span className="text-teal text-sm font-sans font-medium group-hover:underline">
+              <a href="/services/lead-generation-funnels" className="text-teal text-sm font-sans font-medium group-hover:underline">
                 Learn more &rarr;
-              </span>
+              </a>
             </div>
 
             {/* CRM Integration */}
@@ -212,9 +212,9 @@ export default function Home() {
                 Your CRM should work for you, not the other way around. We set up and optimize
                 GoHighLevel, HubSpot, or custom systems so nothing falls through the cracks.
               </p>
-              <span className="text-teal text-sm font-sans font-medium group-hover:underline">
+              <a href="/services/crm-integration" className="text-teal text-sm font-sans font-medium group-hover:underline">
                 Learn more &rarr;
-              </span>
+              </a>
             </div>
           </div>
         </div>
@@ -333,7 +333,7 @@ export default function Home() {
               See How Much Your Business Could Save with AI
             </h2>
             <p className="text-lg text-gray-500 max-w-2xl mx-auto font-sans">
-              Answer 4 quick questions and we&apos;ll show you exactly where AI can save you time
+              Answer a few quick questions and we&apos;ll show you exactly where AI can save you time
               and money.
             </p>
           </div>
@@ -404,7 +404,12 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-8 pt-8 flex flex-col items-center gap-1">
+          <div className="mt-8 pt-8 border-t border-white/10 flex flex-col items-center gap-2">
+            <div className="flex items-center gap-4">
+              <a href="/privacy" className="text-gray-500 text-xs hover:text-gray-300 transition-colors font-sans">Privacy Policy</a>
+              <span className="text-gray-600 text-xs">·</span>
+              <a href="/terms" className="text-gray-500 text-xs hover:text-gray-300 transition-colors font-sans">Terms of Service</a>
+            </div>
             <p className="text-gray-500 text-sm font-sans">
               &copy; 2026 wirig.ai. All rights reserved.
             </p>
