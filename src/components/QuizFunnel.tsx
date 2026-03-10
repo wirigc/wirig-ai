@@ -172,7 +172,6 @@ export default function QuizFunnel() {
           {/* Embedded calendar */}
           <div className="bg-white rounded-2xl border-2 border-red-200 overflow-hidden shadow-lg shadow-red-100/50">
             <div className="bg-navy text-white px-6 py-6 text-center">
-              <h4 className="font-heading text-2xl md:text-3xl font-bold">Book your free 30-minute revenue leak audit now</h4>
             </div>
             <iframe
               src={getCalendarUrl()}
