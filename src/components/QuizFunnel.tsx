@@ -173,7 +173,6 @@ export default function QuizFunnel() {
           <div className="bg-white rounded-2xl border-2 border-red-200 overflow-hidden shadow-lg shadow-red-100/50">
             <div className="bg-navy text-white px-6 py-6 text-center">
               <h4 className="font-heading text-2xl md:text-3xl font-bold">Book your free 30-minute revenue leak audit now</h4>
-              <p className="text-gray-200 text-sm md:text-base font-sans mt-2">On this call, I&apos;ll show you where leads are falling through, what to automate first, and how much revenue you may be able to recover.</p>
             </div>
             <iframe
               src={getCalendarUrl()}
