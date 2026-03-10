@@ -22,9 +22,9 @@ export default function Navigation() {
   }, [mobileOpen]);
 
   const navLinks = [
-    { href: '#services', label: 'Services' },
-    { href: '#how-it-works', label: 'How It Works' },
-    { href: '#results', label: 'Results' },
+    { href: '/#services', label: 'Services' },
+    { href: '/#how-it-works', label: 'How It Works' },
+    { href: '/#results', label: 'Results' },
   ];
 
   return (
@@ -34,7 +34,7 @@ export default function Navigation() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2 relative z-50" aria-label="wirig.ai home">
+        <a href="/" className="flex items-center gap-2 relative z-50" aria-label="wirig.ai home">
           <svg width="180" height="40" viewBox="0 0 300 64" fill="none" aria-hidden="true">
             <g>
               <path d="M4 16L16 48L28 24L40 48L52 16" stroke="#0A1628" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
@@ -65,10 +65,10 @@ export default function Navigation() {
             </a>
           ))}
           <a
-            href="#audit"
+            href="/#audit"
             className="inline-flex items-center justify-center h-9 px-5 rounded-full bg-teal text-white text-sm font-semibold hover:bg-teal-light transition-colors"
           >
-            Get Your Free AI Audit
+            Book Your Free Lead Leak Audit
           </a>
         </div>
 
@@ -115,11 +115,11 @@ export default function Navigation() {
             </a>
           ))}
           <a
-            href="#audit"
+            href="/#audit"
             onClick={() => setMobileOpen(false)}
             className="inline-flex items-center justify-center h-12 px-8 rounded-full bg-teal text-white text-lg font-semibold hover:bg-teal-light transition-colors mt-4"
           >
-            Get Your Free AI Audit
+            Book Your Free Lead Leak Audit
           </a>
         </div>
       </div>

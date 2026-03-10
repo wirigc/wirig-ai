@@ -38,13 +38,13 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up-delay-3">
             <a
-              href="#audit"
+              href="/#audit"
               className="inline-flex items-center justify-center h-13 px-8 rounded-full bg-teal text-white font-semibold text-lg hover:bg-teal-light transition-all hover:shadow-[0_0_30px_rgba(0,180,216,0.3)] font-sans"
             >
               Book Your Free Lead Leak Audit &rarr;
             </a>
             <a
-              href="#how-it-works"
+              href="/#how-it-works"
               className="inline-flex items-center justify-center h-13 px-8 rounded-full border border-gray-300 text-navy font-medium text-lg hover:bg-gray-100 transition-all font-sans"
             >
               See How It Works
@@ -345,7 +345,7 @@ export default function Home() {
             Every day without a proper lead recovery system is another day of missed conversations, dead follow-up, and lost deals.
           </p>
           <a
-            href="#audit"
+            href="/#audit"
             className="inline-flex items-center justify-center h-14 px-10 rounded-full bg-teal text-white font-semibold text-lg hover:bg-teal-light transition-all hover:shadow-[0_0_40px_rgba(0,180,216,0.4)] font-sans"
           >
             Book Your Free Lead Leak Audit &rarr;
@@ -375,10 +375,10 @@ export default function Home() {
 
             <div className="flex flex-col items-center md:items-end gap-3">
               <div className="flex items-center gap-6">
-                <a href="#services" className="text-sm text-gray-500 hover:text-white transition-colors font-sans">Services</a>
-                <a href="#how-it-works" className="text-sm text-gray-500 hover:text-white transition-colors font-sans">How It Works</a>
-                <a href="#results" className="text-sm text-gray-500 hover:text-white transition-colors font-sans">Results</a>
-                <a href="#audit" className="text-sm text-gray-500 hover:text-white transition-colors font-sans">Lead Leak Audit</a>
+                <a href="/#services" className="text-sm text-gray-500 hover:text-white transition-colors font-sans">Services</a>
+                <a href="/#how-it-works" className="text-sm text-gray-500 hover:text-white transition-colors font-sans">How It Works</a>
+                <a href="/#results" className="text-sm text-gray-500 hover:text-white transition-colors font-sans">Results</a>
+                <a href="/#audit" className="text-sm text-gray-500 hover:text-white transition-colors font-sans">Lead Leak Audit</a>
               </div>
               <a href="mailto:carter@wirig.ai" className="text-sm text-teal hover:text-teal-light transition-colors font-sans">
                 carter@wirig.ai
