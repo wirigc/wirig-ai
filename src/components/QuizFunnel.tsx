@@ -97,17 +97,37 @@ export default function QuizFunnel() {
     }
   };
 
-  const getResultText = () => {
+  const getResultData = () => {
     if (answers.bottleneck === 'Missing phone calls & leads') {
-      return 'Based on your answers, an AI Voice Receptionist could save you an estimated $2,000 to $5,000/month in missed opportunities.';
+      return {
+        badge: 'Revenue Leak Detected',
+        headline: '$3,200/month',
+        subheadline: 'in missed revenue',
+        body: 'Based on your answers, missed calls and slow follow-up may be costing you 8–12 booked appointments every month.',
+      };
     }
     if (answers.bottleneck === 'Manual follow-ups eating my time') {
-      return 'Based on your answers, workflow automation could save your team 15 to 25 hours per week on repetitive follow-up tasks.';
+      return {
+        badge: 'Time Leak Detected',
+        headline: '20 hours/week',
+        subheadline: 'wasted on manual follow-up',
+        body: 'Based on your answers, repetitive admin and slow lead handling may be eating up hours your team should be spending on booked appointments and revenue-generating work.',
+      };
     }
     if (answers.bottleneck === 'No system for qualifying leads') {
-      return 'Based on your answers, an AI-powered lead qualification system could help you close 2 to 3x more deals by filtering out unqualified leads automatically.';
+      return {
+        badge: 'Lead Leak Detected',
+        headline: '2–3 deals/month',
+        subheadline: 'slipping through the cracks',
+        body: 'Based on your answers, weak qualification and inconsistent follow-up may be causing high-intent prospects to disappear before your team ever gets to them.',
+      };
     }
-    return 'Based on your answers, AI automation could save you thousands per month in operational costs. Pick a time below and we\'ll walk through your custom plan.';
+    return {
+      badge: 'Revenue Leak Detected',
+      headline: '$2,500+/month',
+      subheadline: 'in missed revenue',
+      body: 'Based on your answers, missed follow-up, weak qualification, and manual processes may be costing your business real money every month.',
+    };
   };
 
   // Build the GHL calendar embed URL with pre-filled contact info
