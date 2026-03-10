@@ -135,24 +135,25 @@ export default function QuizFunnel() {
           <div className="text-center mb-8">
             <div className="inline-flex items-center gap-2 bg-red-50 text-red-700 border border-red-200 rounded-full px-4 py-2 text-sm font-sans font-medium mb-4">
               <span>⚠️</span>
-              <span>Estimated Revenue Leak</span>
+              <span>{resultData.badge}</span>
             </div>
-            <h3 className="font-heading text-4xl md:text-6xl font-bold mb-4 text-navy leading-tight max-w-3xl mx-auto">
-              {resultData.headline}
-            </h3>
+            <div className="mb-4">
+              <div className="font-heading text-5xl md:text-7xl font-bold text-navy leading-none">{resultData.headline}</div>
+              <div className="font-heading text-xl md:text-3xl font-semibold text-red-700 mt-2">{resultData.subheadline}</div>
+            </div>
             <p className="text-gray-700 text-lg md:text-xl font-sans leading-relaxed max-w-2xl mx-auto mb-4">
               {resultData.body}
             </p>
             <p className="text-navy text-base md:text-lg font-sans font-semibold max-w-2xl mx-auto">
-              Book your free audit below and I&apos;ll show you exactly where the leaks are coming from.
+              Book your free audit below and I&apos;ll show you exactly where the leak is coming from.
             </p>
           </div>
 
           {/* Embedded calendar */}
           <div className="bg-white rounded-2xl border-2 border-red-200 overflow-hidden shadow-lg shadow-red-100/50">
             <div className="bg-navy text-white px-6 py-6 text-center">
-              <h4 className="font-heading text-2xl md:text-3xl font-bold">Stop the leak — book your free 15-minute AI audit now</h4>
-              <p className="text-gray-200 text-sm md:text-base font-sans mt-2">I&apos;ll show you where leads are falling through, what to automate first, and what it could be worth in monthly revenue.</p>
+              <h4 className="font-heading text-2xl md:text-3xl font-bold">Book your free 30-minute revenue leak audit now</h4>
+              <p className="text-gray-200 text-sm md:text-base font-sans mt-2">On this call, I&apos;ll show you where leads are falling through, what to automate first, and how much revenue you may be able to recover.</p>
             </div>
             <iframe
               src={getCalendarUrl()}
@@ -164,7 +165,7 @@ export default function QuizFunnel() {
           </div>
 
           <p className="text-gray-500 text-sm mt-4 text-center font-sans">
-            No pressure. No fluff. Just a clear breakdown of where your business is losing money and what to do about it.
+            No pressure. No fluff. Just a clear breakdown of what&apos;s leaking and how to fix it.
           </p>
         </div>
       </div>
