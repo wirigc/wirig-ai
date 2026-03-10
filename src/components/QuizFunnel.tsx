@@ -164,14 +164,14 @@ export default function QuizFunnel() {
             <p className="text-gray-700 text-lg md:text-xl font-sans leading-relaxed max-w-2xl mx-auto mb-4">
               {resultData.body}
             </p>
-            <p className="text-navy text-base md:text-lg font-sans font-semibold max-w-2xl mx-auto">
-              Book your free audit below and I&apos;ll show you exactly where the leak is coming from.
-            </p>
           </div>
 
           {/* Embedded calendar */}
           <div className="bg-white rounded-2xl border-2 border-red-200 overflow-hidden shadow-lg shadow-red-100/50">
             <div className="bg-navy text-white px-6 py-6 text-center">
+              <p className="text-white text-base md:text-lg font-sans font-semibold max-w-2xl mx-auto">
+                Book your free audit below and I&apos;ll show you exactly where the leak is coming from.
+              </p>
             </div>
             <iframe
               src={getCalendarUrl()}
