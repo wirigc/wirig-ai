@@ -4,33 +4,33 @@ import { useState, useCallback } from 'react';
 
 const STEPS = [
   {
-    question: 'What type of business do you run?',
+    question: 'What best describes your business?',
     options: [
-      'Medical/Dental Clinic',
-      'Med Spa / Aesthetics',
-      'Real Estate',
-      'Professional Services',
-      'Home Services',
+      'Real Estate Agent',
+      'Real Estate Team',
+      'Mortgage Broker',
+      'Loan Officer',
+      'Real Estate Brokerage',
       'Other',
     ],
   },
   {
-    question: "What's your biggest bottleneck right now?",
+    question: "Where are the most leads slipping through right now?",
     options: [
-      'Missing phone calls & leads',
-      'Manual follow-ups eating my time',
-      'No system for qualifying leads',
-      'Customer support is overwhelming',
-      'I need help with all of the above',
+      'Missed calls and inbound inquiries',
+      'Slow follow-up on new leads',
+      'No system for nurturing old leads',
+      'Too much manual back-and-forth',
+      'All of the above',
     ],
   },
   {
-    question: 'How many leads or calls does your business get per month?',
-    options: ['Less than 50', '50 to 200', '200 to 500', '500+'],
+    question: 'How many new leads or inquiries do you get per month?',
+    options: ['Less than 25', '25 to 100', '100 to 300', '300+'],
   },
   {
-    question: "What's your approximate monthly revenue?",
-    options: ['Under $10K', '$10K to $50K', '$50K to $200K', '$200K+'],
+    question: "What's your approximate monthly closed revenue?",
+    options: ['Under $25K', '$25K to $100K', '$100K to $300K', '$300K+'],
   },
 ];
 
@@ -98,35 +98,43 @@ export default function QuizFunnel() {
   };
 
   const getResultData = () => {
-    if (answers.bottleneck === 'Missing phone calls & leads') {
-      return {
-        badge: 'Revenue Leak Detected',
-        headline: '$3,200/month',
-        subheadline: 'in missed revenue',
-        body: 'Based on your answers, missed calls and slow follow-up may be costing you 8–12 booked appointments every month.',
-      };
-    }
-    if (answers.bottleneck === 'Manual follow-ups eating my time') {
-      return {
-        badge: 'Time Leak Detected',
-        headline: '20 hours/week',
-        subheadline: 'wasted on manual follow-up',
-        body: 'Based on your answers, repetitive admin and slow lead handling may be eating up hours your team should be spending on booked appointments and revenue-generating work.',
-      };
-    }
-    if (answers.bottleneck === 'No system for qualifying leads') {
+    if (answers.bottleneck === 'Missed calls and inbound inquiries') {
       return {
         badge: 'Lead Leak Detected',
+        headline: '$3,200/month',
+        subheadline: 'in missed commission opportunity',
+        body: 'Based on your answers, missed calls and unworked inbound inquiries may be costing you qualified buyers, sellers, or borrowers every single month.',
+      };
+    }
+    if (answers.bottleneck === 'Slow follow-up on new leads') {
+      return {
+        badge: 'Speed-to-Lead Leak',
+        headline: '5–10 hot leads',
+        subheadline: 'cooling off every month',
+        body: 'Based on your answers, slow response time may be causing serious prospects to lose interest before your team ever gets them on the phone.',
+      };
+    }
+    if (answers.bottleneck === 'No system for nurturing old leads') {
+      return {
+        badge: 'Database Leak Detected',
         headline: '2–3 deals/month',
-        subheadline: 'slipping through the cracks',
-        body: 'Based on your answers, weak qualification and inconsistent follow-up may be causing high-intent prospects to disappear before your team ever gets to them.',
+        subheadline: 'sitting in your old pipeline',
+        body: 'Based on your answers, dead leads in your database may still represent real closings if they were followed up with consistently and correctly.',
+      };
+    }
+    if (answers.bottleneck === 'Too much manual back-and-forth') {
+      return {
+        badge: 'Time Leak Detected',
+        headline: '15+ hours/week',
+        subheadline: 'lost to manual lead handling',
+        body: 'Based on your answers, too much texting, chasing, and back-and-forth may be pulling you away from the conversations and closings that actually matter.',
       };
     }
     return {
       badge: 'Revenue Leak Detected',
-      headline: '$2,500+/month',
-      subheadline: 'in missed revenue',
-      body: 'Based on your answers, missed follow-up, weak qualification, and manual processes may be costing your business real money every month.',
+      headline: '$4,500+/month',
+      subheadline: 'in missed opportunity',
+      body: 'Based on your answers, missed calls, slow follow-up, and inconsistent lead handling may be costing your business real revenue every month.',
     };
   };
 
