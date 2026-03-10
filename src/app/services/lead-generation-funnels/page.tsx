@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'Lead Generation Funnels | wirig.ai',
   description:
-    'Smart lead generation funnels that qualify prospects before they ever reach your team. Built for med spas, real estate, and professional services in Utah.',
+    'Lead qualification funnels for real estate and mortgage teams that capture intent, qualify inquiries, and push serious prospects into booked conversations.',
 };
 
 export default function LeadGenerationFunnels() {
@@ -32,9 +32,7 @@ export default function LeadGenerationFunnels() {
             Lead Generation Funnels
           </h1>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-sans">
-            You&apos;re paying for ads. People are clicking. But the leads that come through are a
-            mix of tire-kickers, people who can&apos;t afford you, and the occasional gem buried in
-            the noise. Your team wastes hours sorting through them all.
+            You&apos;re paying for leads, traffic, referrals, or listing inquiries—but by the time they hit your team, you still don&apos;t know who is serious, who needs nurture, and who should be booked right now.
           </p>
         </div>
       </section>
@@ -45,16 +43,10 @@ export default function LeadGenerationFunnels() {
           <div className="prose prose-lg max-w-none">
             <div className="space-y-6 text-gray-700 leading-relaxed font-sans">
               <p>
-                Most lead generation setups look like this: run ads, send traffic to a landing page
-                with a form, collect names and emails, dump them all into the same pipeline, and hope
-                your sales team can figure out who&apos;s worth calling. It works, kind of. But it&apos;s
-                wildly inefficient.
+                Most lead funnels are weak. A form gets filled out, a contact is created, and then everyone gets dumped into the same pipeline with no real qualification, no urgency scoring, and no smart follow-up.
               </p>
               <p>
-                A smart funnel does something different. Instead of just collecting contact info, it
-                qualifies the lead before they ever talk to a human. By the time someone reaches your
-                team, you already know what they want, whether they&apos;re a good fit, and how ready
-                they are to buy.
+                A good funnel tells you what kind of lead this is, how serious they are, what they want, and what should happen next before your team ever picks up the phone.
               </p>
 
               <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy mt-12 mb-4">

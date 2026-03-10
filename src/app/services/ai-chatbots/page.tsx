@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'AI Chatbots & Sales Agents | wirig.ai',
   description:
-    'AI chatbots that engage website visitors, qualify leads, answer questions, and book meetings 24/7. Built for med spas, real estate, and professional services in Utah.',
+    'Lead capture chatbots that engage visitors, qualify buyers, sellers, and borrowers, and turn website traffic into booked conversations. Built for real estate and mortgage teams.',
 };
 
 export default function AIChatbots() {
@@ -32,9 +32,7 @@ export default function AIChatbots() {
             AI Chatbots &amp; Sales Agents
           </h1>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-sans">
-            Someone lands on your website at 11pm. They&apos;re interested. They have questions.
-            They look around for 30 seconds, don&apos;t find what they need, and leave. You never
-            even knew they were there.
+            Someone lands on your site at 10:47pm after seeing a listing, a mortgage ad, or a referral link. They have a question, they&apos;re interested, and they&apos;re ready now. They leave before anybody responds.
           </p>
         </div>
       </section>
@@ -45,15 +43,10 @@ export default function AIChatbots() {
           <div className="prose prose-lg max-w-none">
             <div className="space-y-6 text-gray-700 leading-relaxed font-sans">
               <p>
-                This is the reality for most business websites. You spend money on ads, SEO, and
-                content to drive traffic, but once someone lands on the page, there&apos;s no one
-                there to talk to them. Your website is a brochure. It should be a salesperson.
+                This is the problem with most real estate and mortgage websites. Traffic comes in, curiosity is high, but there is no system to answer questions, qualify intent, and move the lead toward a real conversation.
               </p>
               <p>
-                The average website converts 2-3% of visitors. That means 97 out of every 100 people
-                who visit your site leave without doing anything. An AI chatbot won&apos;t convert all
-                of them, but it consistently bumps that number up to 8-15% by engaging visitors at the
-                right moment with the right information.
+                Most sites leak attention fast. A strong chatbot can capture buyer, seller, and borrower intent immediately, answer the first questions, and push serious people toward the next step instead of letting them vanish.
               </p>
 
               <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy mt-12 mb-4">

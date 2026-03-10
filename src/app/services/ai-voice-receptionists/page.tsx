@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'AI Voice Receptionists | wirig.ai',
   description:
-    'AI voice receptionists that answer your phones 24/7, qualify callers, book appointments, and route urgent calls. Built for med spas, real estate, and professional services in Utah.',
+    'AI lead response systems that answer inbound calls, qualify buyers, sellers, and borrowers, and route hot opportunities fast. Built for real estate and mortgage teams.',
 };
 
 export default function AIVoiceReceptionists() {
@@ -32,9 +32,7 @@ export default function AIVoiceReceptionists() {
             AI Voice Receptionists
           </h1>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-sans">
-            Your phone rings at 9pm on a Tuesday. It&apos;s a new patient wanting to book a Botox
-            consultation. Nobody&apos;s at the front desk. That call goes to voicemail&mdash;and that
-            patient books with someone else.
+            Your phone rings at 7:42pm. It&apos;s a buyer, seller, or borrower ready to talk. Nobody picks up. That lead goes cold, calls somebody else, or disappears into voicemail forever.
           </p>
         </div>
       </section>
@@ -45,15 +43,10 @@ export default function AIVoiceReceptionists() {
           <div className="prose prose-lg max-w-none">
             <div className="space-y-6 text-gray-700 leading-relaxed font-sans">
               <p>
-                This happens dozens of times a week at businesses across Utah. Med spas, dental offices,
-                real estate teams, law firms&mdash;any business that depends on inbound calls is bleeding
-                revenue every time a call goes unanswered.
+                This happens constantly in real estate and mortgage. Missed calls from online leads, referrals, sign calls, and repeat clients turn into missed conversations, missed appointments, and missed closings.
               </p>
               <p>
-                The math is simple. If your average client is worth $500 and you miss 10 calls a week,
-                that&apos;s $5,000 in potential revenue walking out the door every single week. Even if
-                only half of those callers would have converted, you&apos;re still looking at $2,500 per
-                week. $10,000 per month. Gone.
+                The math is brutal. One missed borrower or seller conversation can be worth thousands. One missed call can turn into a lost deal, lost commission, or a lead that ends up working with somebody else.
               </p>
 
               <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy mt-12 mb-4">

@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'Workflow Automation | wirig.ai',
   description:
-    'Eliminate repetitive tasks with custom workflow automation. We connect your tools, automate your processes, and free up hours every week. Built for businesses in Utah.',
+    'Workflow automation for real estate and mortgage teams. Faster response, cleaner follow-up, fewer manual steps, and tighter lead handling.',
 };
 
 export default function WorkflowAutomation() {
@@ -32,9 +32,7 @@ export default function WorkflowAutomation() {
             Workflow Automation
           </h1>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-sans">
-            Your office manager spends two hours every morning copying data from emails into your
-            CRM, updating spreadsheets, and sending follow-up texts. That&apos;s 10 hours a week.
-            520 hours a year. All on tasks a machine could do in seconds.
+            Your team is still copying leads into the CRM, manually texting new inquiries, updating stages by hand, and trying to remember who needs follow-up next. That adds up fast—and it slows everything down.
           </p>
         </div>
       </section>
@@ -45,15 +43,10 @@ export default function WorkflowAutomation() {
           <div className="prose prose-lg max-w-none">
             <div className="space-y-6 text-gray-700 leading-relaxed font-sans">
               <p>
-                Workflow automation is the unsexy part of AI that makes the biggest difference to your
-                bottom line. It&apos;s not flashy. Nobody posts about it on LinkedIn. But it&apos;s the
-                thing that turns a 6-person operation into a 6-person operation that runs like it has 10.
+                Workflow automation is the part that actually makes the business feel tighter. It is what turns scattered lead handling into a real system that responds faster and drops fewer opportunities.
               </p>
               <p>
-                Most businesses we work with are running on a patchwork of tools that don&apos;t talk
-                to each other. They use one tool for scheduling, another for email, another for
-                invoicing, another for their CRM, and a spreadsheet to tie it all together. Every
-                handoff between tools is a place where things get dropped, delayed, or done wrong.
+                Most real estate and mortgage teams are still using some ugly mix of CRM, forms, email, calendars, texting, spreadsheets, and memory. Every handoff between those tools is a place where leads get delayed, dropped, or forgotten.
               </p>
 
               <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy mt-12 mb-4">

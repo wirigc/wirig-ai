@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'CRM Integration (GoHighLevel, HubSpot) | wirig.ai',
   description:
-    'CRM setup and integration that actually works. GoHighLevel, HubSpot, and custom systems built for med spas, real estate, and professional services in Utah.',
+    'CRM setup for real estate agents and mortgage professionals. Pipelines, calendars, follow-up logic, and lead routing that actually get used.',
 };
 
 export default function CRMIntegration() {
@@ -32,9 +32,7 @@ export default function CRMIntegration() {
             CRM Integration
           </h1>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-sans">
-            You bought a CRM. Maybe it was GoHighLevel, maybe HubSpot, maybe something else. The
-            sales rep made it look incredible. Three months later, your team barely uses it, your
-            data is a mess, and you&apos;re wondering if you should just go back to spreadsheets.
+            You bought a CRM, imported some leads, built a few stages, and hoped the team would use it. A few weeks later the data is messy, follow-up is inconsistent, and no one fully trusts what&apos;s in the pipeline.
           </p>
         </div>
       </section>
@@ -45,16 +43,10 @@ export default function CRMIntegration() {
           <div className="prose prose-lg max-w-none">
             <div className="space-y-6 text-gray-700 leading-relaxed font-sans">
               <p>
-                This is the most common story we hear from business owners. The CRM itself isn&apos;t
-                the problem. The problem is that nobody set it up correctly, nobody trained the team on
-                how to actually use it, and nobody connected it to the rest of the tools the business
-                runs on.
+                This is the common story in real estate and mortgage. The CRM isn&apos;t the problem. The setup is weak, the pipeline doesn&apos;t match reality, and lead response is not connected tightly enough to the system people actually use.
               </p>
               <p>
-                A CRM should be the central nervous system of your business. Every lead, every customer
-                interaction, every follow-up, every sale&mdash;it should all live in one place where
-                anyone on your team can see exactly where things stand. When it works, it&apos;s
-                incredibly powerful. When it doesn&apos;t, it&apos;s just another tab you forget to check.
+                Your CRM should be the place where every new inquiry, missed call, follow-up, appointment, and opportunity lives. If it&apos;s not doing that, leads are slipping through the cracks and nobody has a clean picture of the pipeline.
               </p>
 
               <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy mt-12 mb-4">
