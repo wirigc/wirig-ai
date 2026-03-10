@@ -125,6 +125,7 @@ export default function QuizFunnel() {
 
   const totalSteps = 5;
   const progress = submitted ? 100 : ((step + 1) / totalSteps) * 100;
+  const resultData = getResultData();
 
   if (submitted) {
     return (
@@ -132,20 +133,26 @@ export default function QuizFunnel() {
         <div className="animate-fade-in-up">
           {/* Results header */}
           <div className="text-center mb-8">
-            <div className="text-5xl mb-4">📊</div>
-            <h3 className="font-heading text-2xl md:text-3xl font-bold mb-4 text-navy">
-              Here&apos;s what we found
+            <div className="inline-flex items-center gap-2 bg-red-50 text-red-700 border border-red-200 rounded-full px-4 py-2 text-sm font-sans font-medium mb-4">
+              <span>⚠️</span>
+              <span>Estimated Revenue Leak</span>
+            </div>
+            <h3 className="font-heading text-4xl md:text-6xl font-bold mb-4 text-navy leading-tight max-w-3xl mx-auto">
+              {resultData.headline}
             </h3>
-            <p className="text-gray-700 text-lg font-sans leading-relaxed max-w-2xl mx-auto">
-              {getResultText()}
+            <p className="text-gray-700 text-lg md:text-xl font-sans leading-relaxed max-w-2xl mx-auto mb-4">
+              {resultData.body}
+            </p>
+            <p className="text-navy text-base md:text-lg font-sans font-semibold max-w-2xl mx-auto">
+              Book your free audit below and I&apos;ll show you exactly where the leaks are coming from.
             </p>
           </div>
 
           {/* Embedded calendar */}
-          <div className="bg-white rounded-2xl border-2 border-gray-200 overflow-hidden shadow-sm">
-            <div className="bg-navy text-white px-6 py-4 text-center">
-              <h4 className="font-heading text-lg font-semibold">Book Your Free 15-Minute AI Audit Call</h4>
-              <p className="text-gray-300 text-sm font-sans mt-1">Pick a time that works for you. No strings attached.</p>
+          <div className="bg-white rounded-2xl border-2 border-red-200 overflow-hidden shadow-lg shadow-red-100/50">
+            <div className="bg-navy text-white px-6 py-6 text-center">
+              <h4 className="font-heading text-2xl md:text-3xl font-bold">Stop the leak — book your free 15-minute AI audit now</h4>
+              <p className="text-gray-200 text-sm md:text-base font-sans mt-2">I&apos;ll show you where leads are falling through, what to automate first, and what it could be worth in monthly revenue.</p>
             </div>
             <iframe
               src={getCalendarUrl()}
@@ -157,7 +164,7 @@ export default function QuizFunnel() {
           </div>
 
           <p className="text-gray-500 text-sm mt-4 text-center font-sans">
-            Your contact info has been pre-filled from the quiz. Just pick a time slot.
+            No pressure. No fluff. Just a clear breakdown of where your business is losing money and what to do about it.
           </p>
         </div>
       </div>
