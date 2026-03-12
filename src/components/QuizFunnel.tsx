@@ -89,6 +89,9 @@ export default function QuizFunnel() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(answers),
       });
+      if (typeof window !== 'undefined' && (window as typeof window & { fbq?: (...args: unknown[]) => void }).fbq) {
+        (window as typeof window & { fbq?: (...args: unknown[]) => void }).fbq?.('track', 'Lead');
+      }
       setSubmitted(true);
     } catch {
       setSubmitted(true);
