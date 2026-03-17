@@ -65,10 +65,10 @@ export default function Navigation() {
             </a>
           ))}
           <a
-            href="/#audit"
+            href="/#demo"
             className="inline-flex items-center justify-center h-9 px-5 rounded-full bg-teal text-white text-sm font-semibold hover:bg-teal-light transition-colors"
           >
-            Book Your Free Lead Leak Audit
+            See a Live Demo
           </a>
         </div>
 
@@ -115,11 +115,11 @@ export default function Navigation() {
             </a>
           ))}
           <a
-            href="/#audit"
+            href="/#demo"
             onClick={() => setMobileOpen(false)}
             className="inline-flex items-center justify-center h-12 px-8 rounded-full bg-teal text-white text-lg font-semibold hover:bg-teal-light transition-colors mt-4"
           >
-            Book Your Free Lead Leak Audit
+            See a Live Demo
           </a>
         </div>
       </div>
