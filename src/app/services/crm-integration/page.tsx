@@ -59,23 +59,23 @@ export default function CRMIntegration() {
               <ul className="space-y-3 ml-0 list-none">
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Pipeline design</strong>&mdash;building deal stages that match how your business actually sells. Not generic templates, but stages that reflect your real sales process.</span>
+                  <span><strong className="text-navy">Pipeline design</strong>.building deal stages that match how your business actually sells. Not generic templates, but stages that reflect your real sales process.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Automation rules</strong>&mdash;when a lead enters a specific stage, certain things should happen automatically. Follow-up emails, task assignments, notifications, status updates.</span>
+                  <span><strong className="text-navy">Automation rules</strong>.when a lead enters a specific stage, certain things should happen automatically. Follow-up emails, task assignments, notifications, status updates.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Tool connections</strong>&mdash;your CRM needs to talk to everything else. Your website forms, your phone system, your email, your calendar, your invoicing tool.</span>
+                  <span><strong className="text-navy">Tool connections</strong>.your CRM needs to talk to everything else. Your website forms, your phone system, your email, your calendar, your invoicing tool.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Reporting</strong>&mdash;dashboards that show you what actually matters. Pipeline value, conversion rates by source, team performance, revenue forecasts.</span>
+                  <span><strong className="text-navy">Reporting</strong>.dashboards that show you what actually matters. Pipeline value, conversion rates by source, team performance, revenue forecasts.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Team adoption</strong>&mdash;making the CRM so easy and useful that your team actually wants to use it, because it saves them time instead of creating extra work.</span>
+                  <span><strong className="text-navy">Team adoption</strong>.making the CRM so easy and useful that your team actually wants to use it, because it saves them time instead of creating extra work.</span>
                 </li>
               </ul>
 
@@ -122,7 +122,7 @@ export default function CRMIntegration() {
               <p>
                 Our HubSpot work includes custom properties, deal pipelines, workflow automation,
                 email sequences, landing pages, and integration with your existing tools. We also do
-                migrations&mdash;if you&apos;re moving from another CRM, we handle the data transfer
+                migrations.if you&apos;re moving from another CRM, we handle the data transfer
                 and make sure nothing gets lost.
               </p>
 
@@ -187,7 +187,7 @@ export default function CRMIntegration() {
               <p>
                 <strong className="text-navy">5. Support and optimize.</strong> After launch, we monitor
                 the system, fix any issues, and make improvements based on how your team is actually
-                using it. CRM setup isn&apos;t a one-time project&mdash;it evolves with your business.
+                using it. CRM setup isn&apos;t a one-time project.it evolves with your business.
               </p>
 
               <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy mt-12 mb-4">
@@ -202,7 +202,7 @@ export default function CRMIntegration() {
               <p>
                 Without a solid CRM, every other automation you build is working with bad data and
                 broken processes. With one, everything clicks together. Leads flow in, get qualified,
-                get followed up with, and close&mdash;and you can see exactly how it&apos;s all
+                get followed up with, and close.and you can see exactly how it&apos;s all
                 performing in real time.
               </p>
               <p>
@@ -232,8 +232,8 @@ export default function CRMIntegration() {
             Get a CRM That Actually Works for You
           </h2>
           <p className="text-lg text-gray-700 max-w-xl mx-auto mb-10 leading-relaxed font-sans">
-            Take the free AI audit and we&apos;ll assess your current CRM setup&mdash;or help you
-            choose the right one&mdash;and show you what a properly integrated system looks like.
+            Take the free AI audit and we&apos;ll assess your current CRM setup.or help you
+            choose the right one.and show you what a properly integrated system looks like.
           </p>
           <a
             href="/#audit"

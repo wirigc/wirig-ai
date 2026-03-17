@@ -32,7 +32,7 @@ export default function LeadGenerationFunnels() {
             Lead Generation Funnels
           </h1>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-sans">
-            You&apos;re paying for leads, traffic, referrals, or listing inquiries—but by the time they hit your team, you still don&apos;t know who is serious, who needs nurture, and who should be booked right now.
+            You&apos;re paying for leads, traffic, referrals, or listing inquiries.but by the time they hit your team, you still don&apos;t know who is serious, who needs nurture, and who should be booked right now.
           </p>
         </div>
       </section>
@@ -75,7 +75,7 @@ export default function LeadGenerationFunnels() {
               <p>
                 <strong className="text-navy">Step 3: Personalized results.</strong> Based on their
                 answers, the lead sees a customized recommendation. Not a generic &quot;thanks for your
-                interest&quot; page&mdash;an actual recommendation of which services would work best for
+                interest&quot; page.an actual recommendation of which services would work best for
                 their specific situation, with realistic expectations about results and timing.
               </p>
               <p>
@@ -87,7 +87,7 @@ export default function LeadGenerationFunnels() {
               <p>
                 <strong className="text-navy">Step 5: Automated follow-up.</strong> If they don&apos;t
                 book immediately, they enter a follow-up sequence. Texts, emails, or both. Personalized
-                based on their quiz answers. Not generic drip campaigns&mdash;messages that reference what
+                based on their quiz answers. Not generic drip campaigns.messages that reference what
                 they&apos;re actually interested in.
               </p>
 
@@ -154,27 +154,27 @@ export default function LeadGenerationFunnels() {
               <ul className="space-y-3 ml-0 list-none">
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Lead scoring</strong>&mdash;every lead gets a score based on their answers. Your team knows instantly who to call first.</span>
+                  <span><strong className="text-navy">Lead scoring</strong>.every lead gets a score based on their answers. Your team knows instantly who to call first.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">CRM integration</strong>&mdash;leads flow directly into GoHighLevel, HubSpot, or whatever you use. No manual data entry.</span>
+                  <span><strong className="text-navy">CRM integration</strong>.leads flow directly into GoHighLevel, HubSpot, or whatever you use. No manual data entry.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Automated follow-up sequences</strong>&mdash;personalized text and email sequences that reference the lead&apos;s specific answers.</span>
+                  <span><strong className="text-navy">Automated follow-up sequences</strong>.personalized text and email sequences that reference the lead&apos;s specific answers.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Calendar booking</strong>&mdash;embedded scheduling that shows real availability and sends confirmations.</span>
+                  <span><strong className="text-navy">Calendar booking</strong>.embedded scheduling that shows real availability and sends confirmations.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Analytics and tracking</strong>&mdash;you see exactly where people drop off, which questions cause friction, and which lead sources produce the best results.</span>
+                  <span><strong className="text-navy">Analytics and tracking</strong>.you see exactly where people drop off, which questions cause friction, and which lead sources produce the best results.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">A/B testing</strong>&mdash;we test different questions, copy, and flows to continuously improve conversion rates.</span>
+                  <span><strong className="text-navy">A/B testing</strong>.we test different questions, copy, and flows to continuously improve conversion rates.</span>
                 </li>
               </ul>
 
@@ -206,7 +206,7 @@ export default function LeadGenerationFunnels() {
                 The ROI math is straightforward. If you&apos;re spending $3,000/month on ads and
                 getting 30 leads at $100 each with a 10% close rate, you&apos;re closing 3 clients.
                 A smart funnel getting the same traffic might produce 20 qualified leads at $150 each
-                but with a 25% close rate&mdash;closing 5 clients. Same ad spend, more revenue.
+                but with a 25% close rate.closing 5 clients. Same ad spend, more revenue.
               </p>
             </div>
           </div>

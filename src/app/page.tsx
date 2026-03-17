@@ -33,7 +33,7 @@ export default function Home() {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in-up-delay-2 font-sans">
-            We build AI employees for real estate agents and mortgage professionals that find your ideal prospects, reach out in your voice, and book appointments on your calendar — so you wake up with meetings you never had to chase.
+            We build AI employees for real estate agents and mortgage professionals that find your ideal prospects, reach out in your voice, and book appointments on your calendar, so you wake up with meetings you never had to chase.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up-delay-3">
@@ -116,7 +116,7 @@ export default function Home() {
               What Your AI Employee Does
             </p>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-navy">
-              A Full Prospecting Team — Powered by AI
+              A Full Prospecting Team: Powered by AI
             </h2>
             <p className="text-lg text-gray-500 max-w-2xl mx-auto font-sans">
               Tell your AI what you want in plain English. It finds the leads, sends the outreach, nurtures the conversations, and books the meetings.
@@ -133,7 +133,7 @@ export default function Home() {
               </div>
               <h3 className="font-heading text-xl font-semibold mb-3 text-navy">AI Lead Sourcing</h3>
               <p className="text-gray-700 leading-relaxed font-sans mb-4">
-                Your AI scrapes MLS data, databases, and industry tools to find prospects that match your exact criteria — ranked and ready for outreach.
+                Your AI scrapes MLS data, databases, and industry tools to find prospects that match your exact criteria, ranked and ready for outreach.
               </p>
               <span className="text-teal text-sm font-sans font-medium">
                 Automated prospecting
@@ -149,7 +149,7 @@ export default function Home() {
               </div>
               <h3 className="font-heading text-xl font-semibold mb-3 text-navy">Automated Outreach</h3>
               <p className="text-gray-700 leading-relaxed font-sans mb-4">
-                Your AI writes personalized messages in your voice and sends outreach via email, text, and messaging — automatically, every day.
+                Your AI writes personalized messages in your voice and sends outreach via email, text, and messaging. Automatically, every day.
               </p>
               <span className="text-teal text-sm font-sans font-medium">
                 Multi-channel messaging
@@ -197,7 +197,7 @@ export default function Home() {
               </div>
               <h3 className="font-heading text-xl font-semibold mb-3 text-navy">CRM Dashboard</h3>
               <p className="text-gray-700 leading-relaxed font-sans mb-4">
-                Every lead, every outreach, every response — tracked in one dashboard. See exactly what your AI is doing and the results it&apos;s generating.
+                Every lead, every outreach, every response. All tracked in one dashboard. See exactly what your AI is doing and the results it&apos;s generating.
               </p>
               <span className="text-teal text-sm font-sans font-medium">
                 Full visibility
@@ -317,11 +317,11 @@ export default function Home() {
               Watch the AI Find Leads and Book Meetings
             </h2>
             <p className="text-lg text-gray-500 max-w-2xl mx-auto font-sans">
-              This is a real demo — not a mockup. Watch as the AI scrapes leads, sends personalized outreach, and books a meeting on the calendar.
+              This is a real demo, not a mockup. Watch as the AI scrapes leads, sends personalized outreach, and books a meeting on the calendar.
             </p>
           </div>
 
-          {/* Loom embed placeholder — replace src with actual Loom URL */}
+          {/* Loom embed placeholder- replace src with actual Loom URL */}
           <div className="relative w-full rounded-2xl overflow-hidden shadow-xl border border-gray-200 bg-navy aspect-video flex items-center justify-center">
             <div className="text-center">
               <div className="w-20 h-20 rounded-full bg-teal/20 flex items-center justify-center mx-auto mb-4">

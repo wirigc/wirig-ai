@@ -64,23 +64,23 @@ export default function AIVoiceReceptionists() {
               <ul className="space-y-3 ml-0 list-none">
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Answers every call</strong>&mdash;24 hours a day, 7 days a week. No hold music, no voicemail, no &quot;call back during business hours.&quot;</span>
+                  <span><strong className="text-navy">Answers every call</strong>.24 hours a day, 7 days a week. No hold music, no voicemail, no &quot;call back during business hours.&quot;</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Qualifies callers</strong>&mdash;asks the right questions to understand what they need, whether they&apos;re a good fit, and how urgent their request is.</span>
+                  <span><strong className="text-navy">Qualifies callers</strong>.asks the right questions to understand what they need, whether they&apos;re a good fit, and how urgent their request is.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Books appointments</strong>&mdash;checks your real calendar availability and schedules the caller directly. No back-and-forth.</span>
+                  <span><strong className="text-navy">Books appointments</strong>.checks your real calendar availability and schedules the caller directly. No back-and-forth.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Routes urgent calls</strong>&mdash;if someone needs to talk to a human right now, the AI transfers the call to the right person on your team.</span>
+                  <span><strong className="text-navy">Routes urgent calls</strong>.if someone needs to talk to a human right now, the AI transfers the call to the right person on your team.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Logs everything</strong>&mdash;every call gets summarized and pushed into your CRM. You see who called, what they wanted, and what action was taken.</span>
+                  <span><strong className="text-navy">Logs everything</strong>.every call gets summarized and pushed into your CRM. You see who called, what they wanted, and what action was taken.</span>
                 </li>
               </ul>
 
@@ -100,12 +100,12 @@ export default function AIVoiceReceptionists() {
               <p>
                 <strong className="text-navy">Real estate teams.</strong> When a buyer calls about a
                 listing, they want answers now. Not tomorrow. The AI can answer property questions, qualify
-                the lead based on budget and timeline, and book a showing&mdash;all while your agents are
+                the lead based on budget and timeline, and book a showing.all while your agents are
                 at dinner or showing another property.
               </p>
               <p>
                 <strong className="text-navy">Professional services.</strong> Law firms, accounting firms,
-                mortgage brokers&mdash;any business where a missed call means a missed client. The AI
+                mortgage brokers.any business where a missed call means a missed client. The AI
                 handles intake questions, determines urgency, and either books a consultation or routes
                 the call to the right team member.
               </p>
@@ -137,7 +137,7 @@ export default function AIVoiceReceptionists() {
               <p>
                 <strong className="text-navy">4. We test extensively.</strong> Before going live, we run
                 dozens of test calls covering every scenario we&apos;ve mapped. Edge cases, weird
-                questions, angry callers&mdash;we make sure the AI handles all of it gracefully.
+                questions, angry callers.we make sure the AI handles all of it gracefully.
               </p>
               <p>
                 <strong className="text-navy">5. We deploy and monitor.</strong> Once live, we watch the
@@ -239,7 +239,7 @@ export default function AIVoiceReceptionists() {
           </h2>
           <p className="text-lg text-gray-700 max-w-xl mx-auto mb-10 leading-relaxed font-sans">
             Take the free AI audit and we&apos;ll show you exactly how many calls you&apos;re
-            missing&mdash;and how much revenue an AI receptionist would recover.
+            missing.and how much revenue an AI receptionist would recover.
           </p>
           <a
             href="/#audit"

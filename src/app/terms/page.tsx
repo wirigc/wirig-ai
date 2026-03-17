@@ -2,7 +2,7 @@ import Navigation from '@/components/Navigation';
 
 export const metadata = {
   title: 'Terms of Service | wirig.ai',
-  description: 'Terms of Service for wirig.ai — the rules that govern your use of our website and services.',
+  description: 'Terms of Service for wirig.ai - the rules that govern your use of our website and services.',
 };
 
 export default function TermsOfService() {
@@ -65,7 +65,7 @@ export default function TermsOfService() {
             <section>
               <h2 className="font-heading text-2xl font-semibold text-navy">Intellectual Property</h2>
               <p>
-                All content on this site — text, design, graphics, logos, and code — is owned by
+                All content on this site - text, design, graphics, logos, and code - is owned by
                 Wirig LLC or used with permission. You may not copy, reproduce, or distribute our
                 content without written permission.
               </p>

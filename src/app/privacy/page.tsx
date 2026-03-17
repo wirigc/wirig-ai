@@ -2,7 +2,7 @@ import Navigation from '@/components/Navigation';
 
 export const metadata = {
   title: 'Privacy Policy | wirig.ai',
-  description: 'Privacy Policy for wirig.ai — how we collect, use, and protect your information.',
+  description: 'Privacy Policy for wirig.ai - how we collect, use, and protect your information.',
 };
 
 export default function PrivacyPolicy() {

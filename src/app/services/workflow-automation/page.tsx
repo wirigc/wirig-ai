@@ -32,7 +32,7 @@ export default function WorkflowAutomation() {
             Workflow Automation
           </h1>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-sans">
-            Your team is still copying leads into the CRM, manually texting new inquiries, updating stages by hand, and trying to remember who needs follow-up next. That adds up fast—and it slows everything down.
+            Your team is still copying leads into the CRM, manually texting new inquiries, updating stages by hand, and trying to remember who needs follow-up next. That adds up fast.and it slows everything down.
           </p>
         </div>
       </section>
@@ -94,23 +94,23 @@ export default function WorkflowAutomation() {
               <ul className="space-y-3 ml-0 list-none">
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">GoHighLevel</strong>&mdash;our go-to for businesses that need a CRM, marketing automation, and communication tools in one place.</span>
+                  <span><strong className="text-navy">GoHighLevel</strong>.our go-to for businesses that need a CRM, marketing automation, and communication tools in one place.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">n8n and Make</strong>&mdash;for building the automation workflows themselves. These connect your tools and handle the logic.</span>
+                  <span><strong className="text-navy">n8n and Make</strong>.for building the automation workflows themselves. These connect your tools and handle the logic.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Google Workspace</strong>&mdash;Calendar, Sheets, Gmail, Drive. Most businesses live in Google, and we make it all work together.</span>
+                  <span><strong className="text-navy">Google Workspace</strong>.Calendar, Sheets, Gmail, Drive. Most businesses live in Google, and we make it all work together.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">QuickBooks / Stripe</strong>&mdash;for invoicing and payment automation.</span>
+                  <span><strong className="text-navy">QuickBooks / Stripe</strong>.for invoicing and payment automation.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Slack / Teams</strong>&mdash;for internal notifications so your team stays in the loop without checking five different dashboards.</span>
+                  <span><strong className="text-navy">Slack / Teams</strong>.for internal notifications so your team stays in the loop without checking five different dashboards.</span>
                 </li>
               </ul>
               <p>
@@ -156,7 +156,7 @@ export default function WorkflowAutomation() {
               </h2>
               <p>
                 Worth clarifying: not all workflow automation involves AI. Some automations are simple
-                if/then logic&mdash;when X happens, do Y. A new form submission triggers a welcome email.
+                if/then logic.when X happens, do Y. A new form submission triggers a welcome email.
                 Simple, reliable, no AI needed.
               </p>
               <p>
@@ -211,7 +211,7 @@ export default function WorkflowAutomation() {
           </h2>
           <p className="text-lg text-gray-700 max-w-xl mx-auto mb-10 leading-relaxed font-sans">
             Take the free AI audit and we&apos;ll identify the workflows eating the most time in your
-            business&mdash;and show you how to automate them.
+            business.and show you how to automate them.
           </p>
           <a
             href="/#audit"

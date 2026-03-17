@@ -75,23 +75,23 @@ export default function AIChatbots() {
               <ul className="space-y-3 ml-0 list-none">
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Visitor engagement</strong>&mdash;proactively starts conversations based on what page someone is viewing and how long they&apos;ve been there.</span>
+                  <span><strong className="text-navy">Visitor engagement</strong>.proactively starts conversations based on what page someone is viewing and how long they&apos;ve been there.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Question answering</strong>&mdash;trained on your entire business to give accurate, specific answers about services, pricing, process, and policies.</span>
+                  <span><strong className="text-navy">Question answering</strong>.trained on your entire business to give accurate, specific answers about services, pricing, process, and policies.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Lead qualification</strong>&mdash;asks the right questions to determine if someone is a good fit and how ready they are to buy.</span>
+                  <span><strong className="text-navy">Lead qualification</strong>.asks the right questions to determine if someone is a good fit and how ready they are to buy.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Appointment booking</strong>&mdash;checks your calendar and books meetings directly in the chat. No &quot;someone will call you back.&quot;</span>
+                  <span><strong className="text-navy">Appointment booking</strong>.checks your calendar and books meetings directly in the chat. No &quot;someone will call you back.&quot;</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">CRM updates</strong>&mdash;every conversation gets logged, leads get tagged and scored, and your team gets notified when a hot lead comes through.</span>
+                  <span><strong className="text-navy">CRM updates</strong>.every conversation gets logged, leads get tagged and scored, and your team gets notified when a hot lead comes through.</span>
                 </li>
               </ul>
 
@@ -102,7 +102,7 @@ export default function AIChatbots() {
                 <strong className="text-navy">Med spa in Salt Lake City.</strong> Their website gets
                 about 2,000 visits per month, mostly from Google Ads. Before the chatbot, they were
                 getting around 40 consultation bookings per month from the website. After deploying
-                the AI chatbot, that number jumped to 95. Same traffic, same ad spend&mdash;just a
+                the AI chatbot, that number jumped to 95. Same traffic, same ad spend.just a
                 smarter website.
               </p>
               <p>
@@ -114,7 +114,7 @@ export default function AIChatbots() {
               <p>
                 <strong className="text-navy">Real estate team in Provo.</strong> They have a lot of
                 listing pages but were losing visitors who had questions about specific properties. The
-                AI chatbot knows every listing in their portfolio&mdash;price, square footage, HOA fees,
+                AI chatbot knows every listing in their portfolio.price, square footage, HOA fees,
                 school district, everything. When someone asks about a property, the bot answers
                 immediately and offers to schedule a showing with the right agent.
               </p>
@@ -140,7 +140,7 @@ export default function AIChatbots() {
               </p>
               <p>
                 <strong className="text-navy">We design the conversation flows.</strong> Not rigid
-                scripts&mdash;actual conversation patterns. We map out the most common scenarios: someone
+                scripts.actual conversation patterns. We map out the most common scenarios: someone
                 asking about pricing, someone comparing options, someone ready to book, someone just
                 browsing. The AI handles all of these differently.
               </p>
@@ -171,15 +171,15 @@ export default function AIChatbots() {
               <ul className="space-y-3 ml-0 list-none">
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">SMS/text</strong>&mdash;respond to text inquiries automatically with the same intelligence as the web chatbot.</span>
+                  <span><strong className="text-navy">SMS/text</strong>.respond to text inquiries automatically with the same intelligence as the web chatbot.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Instagram and Facebook DMs</strong>&mdash;capture leads from social media without your team manually monitoring messages.</span>
+                  <span><strong className="text-navy">Instagram and Facebook DMs</strong>.capture leads from social media without your team manually monitoring messages.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-teal mt-2.5 shrink-0" />
-                  <span><strong className="text-navy">Google Business Messages</strong>&mdash;engage people who find you on Google Maps or Search before they even visit your site.</span>
+                  <span><strong className="text-navy">Google Business Messages</strong>.engage people who find you on Google Maps or Search before they even visit your site.</span>
                 </li>
               </ul>
               <p>
@@ -238,7 +238,7 @@ export default function AIChatbots() {
           </h2>
           <p className="text-lg text-gray-700 max-w-xl mx-auto mb-10 leading-relaxed font-sans">
             Take the free AI audit and we&apos;ll show you exactly how many leads your website is
-            losing&mdash;and how a chatbot would capture them.
+            losing.and how a chatbot would capture them.
           </p>
           <a
             href="/#audit"
