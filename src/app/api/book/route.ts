@@ -33,7 +33,7 @@ export async function POST(request: Request) {
         phone,
         companyName: company || undefined,
         source: 'wirig.ai website',
-        tags: ['website-booking', 'imsg-booking-nudge'],
+        tags: ['website-booking'],
       }),
     });
 
@@ -62,6 +62,25 @@ export async function POST(request: Request) {
         });
       } catch {
         // Pipeline creation is best-effort
+      }
+    }
+
+    // 3. Send iMessage via Tailscale funnel
+    if (phone && firstName) {
+      try {
+        await fetch('https://macmini.tail0008fc.ts.net/send', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer be058a35e4e36584bee9bf8f9f3b08a6b83ce759003dd2d8',
+          },
+          body: JSON.stringify({
+            to: phone,
+            message: `Hey ${firstName}, this is Carter. Just saw you were interested in the AI employee. Were you able to get a meeting booked?`,
+          }),
+        });
+      } catch {
+        // iMessage is best-effort
       }
     }
 
