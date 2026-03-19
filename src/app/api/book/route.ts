@@ -33,7 +33,7 @@ export async function POST(request: Request) {
         phone,
         companyName: company || undefined,
         source: 'wirig.ai website',
-        tags: ['website-booking'],
+        tags: ['website-booking', 'imsg-booking-nudge'],
       }),
     });
 
