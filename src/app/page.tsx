@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation';
 import QuizFunnel from '@/components/QuizFunnel';
+import BookingModal from '@/components/BookingModal';
 
 export default function Home() {
   return (
@@ -336,14 +337,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10 text-center">
-            <a
-              href="https://calendly.com/carterwirig/discovery"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center h-14 px-10 rounded-full bg-teal text-white font-semibold text-lg hover:bg-teal-light transition-all hover:shadow-[0_0_40px_rgba(0,180,216,0.4)] font-sans"
-            >
-              Book a 15-Minute Call &rarr;
-            </a>
+            <BookingModal />
             <p className="text-gray-500 text-sm mt-3 font-sans">No pitch. We&apos;ll show you what your AI employee would look like for your business.</p>
           </div>
         </div>
