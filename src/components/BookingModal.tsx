@@ -37,7 +37,11 @@ export default function BookingModal() {
     setShowCalendar(true);
   };
 
-  const calendarUrl = `https://api.leadconnectorhq.com/widget/booking/R1YmLPNZVww1gjpgtITD?name=${encodeURIComponent(formData.name)}&email=${encodeURIComponent(formData.email)}&phone=${encodeURIComponent(formData.phone)}`;
+  // Split name for GHL widget fields (first_name, last_name, email, phone)
+  const nameParts = formData.name.trim().split(/\s+/);
+  const firstName = nameParts[0] || '';
+  const lastName = nameParts.slice(1).join(' ') || '';
+  const calendarUrl = `https://api.leadconnectorhq.com/widget/booking/R1YmLPNZVww1gjpgtITD?first_name=${encodeURIComponent(firstName)}&last_name=${encodeURIComponent(lastName)}&email=${encodeURIComponent(formData.email)}&phone=${encodeURIComponent(formData.phone)}`;
 
   return (
     <>
