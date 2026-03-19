@@ -321,21 +321,23 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Loom embed placeholder- replace src with actual Loom URL */}
-          <div className="relative w-full rounded-2xl overflow-hidden shadow-xl border border-gray-200 bg-navy aspect-video flex items-center justify-center">
-            <div className="text-center">
-              <div className="w-20 h-20 rounded-full bg-teal/20 flex items-center justify-center mx-auto mb-4">
-                <svg className="w-10 h-10 text-teal" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-              <p className="text-white/60 font-sans text-lg">Demo video coming soon</p>
-            </div>
+          {/* Demo video */}
+          <div className="relative w-full rounded-2xl overflow-hidden shadow-xl border border-gray-200 bg-navy flex items-center justify-center max-w-sm mx-auto">
+            <video
+              className="w-full h-auto"
+              controls
+              playsInline
+              preload="metadata"
+              poster=""
+            >
+              <source src="/demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           <div className="mt-10 text-center">
             <a
-              href="https://calendly.com/carterwirig"
+              href="https://calendly.com/carterwirig/discovery"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center h-14 px-10 rounded-full bg-teal text-white font-semibold text-lg hover:bg-teal-light transition-all hover:shadow-[0_0_40px_rgba(0,180,216,0.4)] font-sans"
