@@ -16,9 +16,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "wirig.ai | Your Business Is Losing Money Every Hour It Runs Without AI",
+  title: "wirig.ai | Custom OpenClaw Deployments for Your Business",
   description:
-    "We build custom AI systems that answer your phones, qualify your leads, and automate your operations. Get your free AI audit today.",
+    "We deploy and manage custom OpenClaw AI systems that find leads, send outreach, book meetings, and automate workflows. Your personal AI employee, set up in days.",
 };
 
 export default function RootLayout({

@@ -22,9 +22,9 @@ export default function Navigation() {
   }, [mobileOpen]);
 
   const navLinks = [
-    { href: '/#services', label: 'Services' },
+    { href: '/#services', label: 'What We Deploy' },
     { href: '/#how-it-works', label: 'How It Works' },
-    { href: '/#results', label: 'Results' },
+    { href: '/#results', label: 'Why Us' },
   ];
 
   return (
