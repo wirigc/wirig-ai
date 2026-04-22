@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'CRM Integration (GoHighLevel, HubSpot) | wirig.ai',
   description:
-    'CRM setup for real estate agents and mortgage professionals. Pipelines, calendars, follow-up logic, and lead routing that actually get used.',
+    'CRM setup for businesses and sales teams. Pipelines, calendars, follow-up logic, and lead routing that actually get used.',
 };
 
 export default function CRMIntegration() {
@@ -43,7 +43,7 @@ export default function CRMIntegration() {
           <div className="prose prose-lg max-w-none">
             <div className="space-y-6 text-gray-700 leading-relaxed font-sans">
               <p>
-                This is the common story in real estate and mortgage. The CRM isn&apos;t the problem. The setup is weak, the pipeline doesn&apos;t match reality, and lead response is not connected tightly enough to the system people actually use.
+                This is the common story in business. The CRM isn&apos;t the problem. The setup is weak, the pipeline doesn&apos;t match reality, and lead response is not connected tightly enough to the system people actually use.
               </p>
               <p>
                 Your CRM should be the place where every new inquiry, missed call, follow-up, appointment, and opportunity lives. If it&apos;s not doing that, leads are slipping through the cracks and nobody has a clean picture of the pipeline.
@@ -95,7 +95,7 @@ export default function CRMIntegration() {
                 visit they get a review request. All from one platform.
               </p>
               <p>
-                For a real estate team, GHL manages leads from every source (Zillow, Realtor.com, your
+                For your business, GHL manages leads from every source (your website, ads, referrals, your
                 website, social media) in one pipeline. Each lead gets automatic follow-up based on where
                 they came from and what they&apos;re looking for. Agents get assigned leads based on
                 availability or territory. Nothing gets lost.

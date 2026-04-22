@@ -6,11 +6,11 @@ const STEPS = [
   {
     question: 'What best describes your business?',
     options: [
-      'Real Estate Agent',
-      'Real Estate Team',
-      'Mortgage Broker',
+      'Business Owner',
+      'Sales Team',
+      'Service Provider',
       'Loan Officer',
-      'Real Estate Brokerage',
+      'Agency or Brokerage',
       'Other',
     ],
   },

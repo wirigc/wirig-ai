@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'AI Voice Receptionists | wirig.ai',
   description:
-    'AI lead response systems that answer inbound calls, qualify buyers, sellers, and borrowers, and route hot opportunities fast. Built for real estate and mortgage teams.',
+    'AI lead response systems that answer inbound calls, qualify buyers, sellers, and borrowers, and route hot opportunities fast. Built for any business.',
 };
 
 export default function AIVoiceReceptionists() {
@@ -43,7 +43,7 @@ export default function AIVoiceReceptionists() {
           <div className="prose prose-lg max-w-none">
             <div className="space-y-6 text-gray-700 leading-relaxed font-sans">
               <p>
-                This happens constantly in real estate and mortgage. Missed calls from online leads, referrals, sign calls, and repeat clients turn into missed conversations, missed appointments, and missed closings.
+                This happens constantly in business. Missed calls from online leads, referrals, sign calls, and repeat clients turn into missed conversations, missed appointments, and missed closings.
               </p>
               <p>
                 The math is brutal. One missed borrower or seller conversation can be worth thousands. One missed call can turn into a lost deal, lost commission, or a lead that ends up working with somebody else.
@@ -100,12 +100,12 @@ export default function AIVoiceReceptionists() {
               <p>
                 <strong className="text-navy">Real estate teams.</strong> When a buyer calls about a
                 listing, they want answers now. Not tomorrow. The AI can answer property questions, qualify
-                the lead based on budget and timeline, and book a showing.all while your agents are
+                the lead based on budget and timeline, and book a showing.all while your team is
                 at dinner or showing another property.
               </p>
               <p>
                 <strong className="text-navy">Professional services.</strong> Law firms, accounting firms,
-                mortgage brokers.any business where a missed call means a missed client. The AI
+                any business where a missed call means a missed client. The AI
                 handles intake questions, determines urgency, and either books a consultation or routes
                 the call to the right team member.
               </p>
@@ -125,7 +125,7 @@ export default function AIVoiceReceptionists() {
               <p>
                 <strong className="text-navy">2. We train the AI on your business.</strong> The AI learns
                 your services, pricing, availability, policies, and tone of voice. If you&apos;re a luxury
-                med spa, it sounds like a luxury med spa. If you&apos;re a fast-paced real estate team,
+                med spa, it sounds like a luxury med spa. If you&apos;re a fast-paced sales team,
                 it matches that energy.
               </p>
               <p>
@@ -191,7 +191,7 @@ export default function AIVoiceReceptionists() {
                 </li>
               </ul>
               <p>
-                One real estate team in Utah County went from capturing about 60% of their inbound leads
+                One team in Utah went from capturing about 60% of their inbound leads
                 to over 95%. That translated to roughly $15,000 in additional closed deals in the first
                 quarter.
               </p>

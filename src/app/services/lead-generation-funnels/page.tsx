@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'Lead Generation Funnels | wirig.ai',
   description:
-    'Lead qualification funnels for real estate and mortgage teams that capture intent, qualify inquiries, and push serious prospects into booked conversations.',
+    'Lead qualification funnels for businesses that capture intent, qualify inquiries, and push serious prospects into booked conversations.',
 };
 
 export default function LeadGenerationFunnels() {
@@ -127,14 +127,14 @@ export default function LeadGenerationFunnels() {
               </p>
               <p>
                 <strong className="text-navy">Real estate home valuation.</strong> Instead of the
-                generic &quot;What&apos;s my home worth?&quot; tool that every agent uses, we built a
+                generic lead capture tool, we built a
                 quiz that asks about the home&apos;s features, condition, recent improvements, and the
-                owner&apos;s timeline for selling. The agent gets a detailed lead profile, not just an
+                owner&apos;s timeline for selling. Your team gets a detailed lead profile, not just an
                 address. Leads who complete this funnel are 3x more likely to list within 90 days
                 compared to standard home valuation leads.
               </p>
               <p>
-                <strong className="text-navy">Mortgage pre-qualification.</strong> A funnel that walks
+                <strong className="text-navy">Service pre-qualification.</strong> A funnel that walks
                 potential borrowers through basic qualification questions in a friendly, non-intimidating
                 way. Instead of &quot;What is your annual gross income?&quot; it asks &quot;What range
                 best describes your household income?&quot; Qualified leads go straight to a loan

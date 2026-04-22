@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'Workflow Automation | wirig.ai',
   description:
-    'Workflow automation for real estate and mortgage teams. Faster response, cleaner follow-up, fewer manual steps, and tighter lead handling.',
+    'Workflow automation for businesses. Faster response, cleaner follow-up, fewer manual steps, and tighter lead handling.',
 };
 
 export default function WorkflowAutomation() {
@@ -46,7 +46,7 @@ export default function WorkflowAutomation() {
                 Workflow automation is the part that actually makes the business feel tighter. It is what turns scattered lead handling into a real system that responds faster and drops fewer opportunities.
               </p>
               <p>
-                Most real estate and mortgage teams are still using some ugly mix of CRM, forms, email, calendars, texting, spreadsheets, and memory. Every handoff between those tools is a place where leads get delayed, dropped, or forgotten.
+                Most teams are still using some ugly mix of CRM, forms, email, calendars, texting, spreadsheets, and memory. Every handoff between those tools is a place where leads get delayed, dropped, or forgotten.
               </p>
 
               <h2 className="font-heading text-2xl md:text-3xl font-bold text-navy mt-12 mb-4">
@@ -63,10 +63,10 @@ export default function WorkflowAutomation() {
                 desk doesn&apos;t touch it.
               </p>
               <p>
-                <strong className="text-navy">Real estate lead follow-up.</strong> Before: agent gets a
+                <strong className="text-navy">Lead follow-up.</strong> Before: team gets a
                 Zillow lead, manually adds it to their CRM, sends a text, follows up with an email, and
                 sets a reminder to call. After: the lead hits the CRM instantly, gets a personalized text
-                within 60 seconds, receives a follow-up email sequence, and the agent gets a notification
+                within 60 seconds, receives a follow-up email sequence, and the team gets a notification
                 when the lead responds. Speed to lead goes from hours to under a minute.
               </p>
               <p>

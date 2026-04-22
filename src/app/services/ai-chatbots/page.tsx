@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'AI Chatbots & Sales Agents | wirig.ai',
   description:
-    'Lead capture chatbots that engage visitors, qualify buyers, sellers, and borrowers, and turn website traffic into booked conversations. Built for real estate and mortgage teams.',
+    'Lead capture chatbots that engage visitors, qualify buyers, sellers, and borrowers, and turn website traffic into booked conversations. Built for any business.',
 };
 
 export default function AIChatbots() {
@@ -32,7 +32,7 @@ export default function AIChatbots() {
             AI Chatbots &amp; Sales Agents
           </h1>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-sans">
-            Someone lands on your site at 10:47pm after seeing a listing, a mortgage ad, or a referral link. They have a question, they&apos;re interested, and they&apos;re ready now. They leave before anybody responds.
+            Someone lands on your site at 10:47pm after seeing an ad, a referral, or a search result. They have a question, they&apos;re interested, and they&apos;re ready now. They leave before anybody responds.
           </p>
         </div>
       </section>
@@ -43,7 +43,7 @@ export default function AIChatbots() {
           <div className="prose prose-lg max-w-none">
             <div className="space-y-6 text-gray-700 leading-relaxed font-sans">
               <p>
-                This is the problem with most real estate and mortgage websites. Traffic comes in, curiosity is high, but there is no system to answer questions, qualify intent, and move the lead toward a real conversation.
+                This is the problem with most business websites. Traffic comes in, curiosity is high, but there is no system to answer questions, qualify intent, and move the lead toward a real conversation.
               </p>
               <p>
                 Most sites leak attention fast. A strong chatbot can capture buyer, seller, and borrower intent immediately, answer the first questions, and push serious people toward the next step instead of letting them vanish.
@@ -116,10 +116,10 @@ export default function AIChatbots() {
                 listing pages but were losing visitors who had questions about specific properties. The
                 AI chatbot knows every listing in their portfolio.price, square footage, HOA fees,
                 school district, everything. When someone asks about a property, the bot answers
-                immediately and offers to schedule a showing with the right agent.
+                immediately and offers to schedule a showing with the right person on your team.
               </p>
               <p>
-                <strong className="text-navy">Mortgage broker.</strong> Pre-qualification is the biggest
+                <strong className="text-navy">Service business.</strong> Pre-qualification is the biggest
                 bottleneck. The chatbot walks potential borrowers through basic qualification questions
                 (income, credit score range, property type, down payment) and routes qualified leads
                 directly to a loan officer. Unqualified leads get helpful information about what they&apos;d
