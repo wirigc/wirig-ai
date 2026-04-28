@@ -1,92 +1,54 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server'
 
-export async function POST(request: Request) {
+export async function POST(req: NextRequest) {
   try {
-    const { name, email, phone, company } = await request.json();
+    const body = await req.json()
+    const { name, email, phone, service, serviceLabel, ...rest } = body
 
-    const GHL_API_KEY = process.env.GHL_API_KEY;
-    const GHL_LOCATION_ID = process.env.GHL_LOCATION_ID || 'L0ZQnsTfJz0DZTJV53zY';
-    const PIPELINE_ID = 'DuR4MZ8qQa8goE0qWMgn';
-    const NEW_LEAD_STAGE = 'ded04bf8-1e9d-4bcc-a71a-b9cad12e905d';
+    // Build notes from all quiz answers
+    const notes = Object.entries(rest)
+      .map(([key, value]) => {
+        const label = key.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
+        const val = Array.isArray(value) ? value.join(', ') : value
+        return `${label}: ${val}`
+      })
+      .join('\n')
 
-    if (!GHL_API_KEY) {
-      return NextResponse.json({ error: 'GHL not configured' }, { status: 500 });
-    }
+    const fullNotes = `Service: ${serviceLabel || service}\n${notes}`
 
-    const nameParts = (name || '').trim().split(/\s+/);
-    const firstName = nameParts[0] || '';
-    const lastName = nameParts.slice(1).join(' ') || '';
-
-    // 1. Create or update contact in GHL
-    const contactRes = await fetch('https://services.leadconnectorhq.com/contacts/', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${GHL_API_KEY}`,
-        'Content-Type': 'application/json',
-        'Version': '2021-07-28',
-      },
-      body: JSON.stringify({
-        locationId: GHL_LOCATION_ID,
-        firstName,
-        lastName,
-        email,
-        phone,
-        companyName: company || undefined,
-        source: 'wirig.ai website',
-        tags: ['website-booking'],
-      }),
-    });
-
-    const contactData = await contactRes.json();
-    const contactId = contactData?.contact?.id;
-
-    // 2. Create opportunity in pipeline (even if they don't book)
-    if (contactId) {
+    // Create GHL contact
+    const ghlApiKey = process.env.GHL_API_KEY
+    if (ghlApiKey) {
       try {
-        await fetch('https://services.leadconnectorhq.com/opportunities/', {
+        const ghlRes = await fetch('https://services.leadconnectorhq.com/contacts/', {
           method: 'POST',
           headers: {
-            'Authorization': `Bearer ${GHL_API_KEY}`,
+            Authorization: `Bearer ${ghlApiKey}`,
             'Content-Type': 'application/json',
-            'Version': '2021-07-28',
+            Version: '2021-07-28',
           },
           body: JSON.stringify({
-            locationId: GHL_LOCATION_ID,
-            pipelineId: PIPELINE_ID,
-            pipelineStageId: NEW_LEAD_STAGE,
-            contactId,
-            name: `${firstName} ${lastName}`.trim() + (company ? ` - ${company}` : ''),
-            status: 'open',
-            source: 'wirig.ai website',
+            name,
+            email,
+            phone,
+            source: 'wirig.ai quiz',
+            tags: [`quiz-${service}`],
+            customFields: [],
+            notes: fullNotes,
           }),
-        });
-      } catch {
-        // Pipeline creation is best-effort
+        })
+
+        if (!ghlRes.ok) {
+          console.error('GHL contact creation failed:', await ghlRes.text())
+        }
+      } catch (ghlErr) {
+        console.error('GHL API error:', ghlErr)
       }
     }
 
-    // 3. Send iMessage via Tailscale funnel
-    if (phone && firstName) {
-      try {
-        await fetch('https://macmini.tail0008fc.ts.net/send', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Bearer be058a35e4e36584bee9bf8f9f3b08a6b83ce759003dd2d8',
-          },
-          body: JSON.stringify({
-            to: phone,
-            message: `Hey ${firstName}, this is Carter. Just saw you were interested in the AI employee. Were you able to get a meeting booked?`,
-          }),
-        });
-      } catch {
-        // iMessage is best-effort
-      }
-    }
-
-    return NextResponse.json({ success: true, contactId });
-  } catch (error) {
-    console.error('Booking API error:', error);
-    return NextResponse.json({ error: 'Failed to create contact' }, { status: 500 });
+    return NextResponse.json({ success: true })
+  } catch (err) {
+    console.error('Book API error:', err)
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
   }
 }
