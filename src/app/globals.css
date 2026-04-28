@@ -1,6 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-sans);
+  --font-heading: var(--font-heading);
+}
 
 :root {
   --navy: #0A1628;
@@ -17,7 +20,7 @@
 
 /* Grid background */
 .bg-grid {
-  background-image: 
+  background-image:
     linear-gradient(rgba(10, 22, 40, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(10, 22, 40, 0.03) 1px, transparent 1px);
   background-size: 40px 40px;
